@@ -1,0 +1,202 @@
+.photolocation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.myphoto {
+  border-radius: 50%;
+}
+
+.navbar {
+  background: #DAA520;
+  font-family: Krungthep;
+}
+.navbar .navbar-brand {
+  color: #FAEBD7;
+  font-size: 2.25rem;
+}
+.navbar .navbar-collapse .nav-item {
+  background: #FAEBD7;
+  margin-left: 20px;
+  border-radius: 5px;
+  border: 2px #2F4F4F solid;
+}
+.navbar .navbar-collapse .nav-item .nav-link {
+  text-align: center;
+  color: #2F4F4F;
+  font-size: 1.75rem;
+}
+.navbar .navbar-collapse .nav-item:hover {
+  background: #2F4F4F;
+  border: 2px #FAEBD7 solid;
+}
+.navbar .navbar-collapse .nav-item:hover .nav-link {
+  color: #FAEBD7;
+}
+
+.main {
+  background: #2F4F4F;
+  color: #FAEBD7;
+  font-family: Krungthep;
+}
+
+.about {
+  background: #2F4F4F;
+  color: #FAEBD7;
+  font-family: Krungthep;
+}
+.about .skill p {
+  text-align: center;
+}
+
+.footer {
+  background: #DAA520;
+  font-family: Krungthep;
+  color: #FAEBD7;
+}
+.footer .footer-item {
+  padding: 20px;
+}
+
+@media (min-width: 0px) {
+  .public-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+  .public-h {
+    font-size: 1.6rem;
+    text-align: start;
+  }
+  .public-p {
+    font-size: 1.2rem;
+    text-align: start;
+  }
+  .myphoto {
+    margin-top: 40px;
+    height: 250px;
+  }
+  .nav-item {
+    margin-top: 20px;
+  }
+  .main {
+    min-height: 35vh;
+    height: 100%;
+  }
+  .main .main-container-text {
+    height: 35vh;
+    padding-top: 3%;
+    text-align: center;
+  }
+  .main .main-title {
+    font-size: 2rem;
+  }
+  .main .main-p {
+    font-size: 1.2rem;
+  }
+  .footer {
+    min-height: 30vh;
+  }
+  .footer .footer-item {
+    text-align: start;
+  }
+  .footer .footer-item .footer-title {
+    font-size: 1.3rem;
+    color: #2F4F4F;
+  }
+  .footer .footer-item a {
+    font-size: 1rem;
+  }
+}
+@media (min-width: 768px) {
+  .public-title {
+    font-size: 5rem;
+  }
+  .public-h {
+    font-size: 3.5rem;
+  }
+  .public-p {
+    font-size: 2rem;
+  }
+  .myphoto {
+    margin-top: 80px;
+    height: 400px;
+  }
+  .nav-item {
+    margin-top: 40px;
+  }
+  .main {
+    min-height: 50vh;
+    height: 100%;
+  }
+  .main .main-container-text {
+    height: 50vh;
+    padding-top: 5%;
+    text-align: center;
+  }
+  .main .main-title {
+    font-size: 5rem;
+  }
+  .main .main-p {
+    font-size: 2rem;
+  }
+  .footer {
+    min-height: 13vh;
+  }
+  .footer .footer-item {
+    text-align: start;
+  }
+  .footer .footer-item .footer-title {
+    font-size: 1.7rem;
+    color: #2F4F4F;
+  }
+  .footer .footer-item a {
+    font-size: 1.5rem;
+  }
+}
+@media (min-width: 996px) {
+  .public-title {
+    font-size: 3.5rem;
+  }
+  .public-h {
+    font-size: 2.5rem;
+  }
+  .public-p {
+    font-size: 1.5rem;
+  }
+  .myphoto {
+    margin-top: 0px;
+    height: 50vh;
+  }
+  .nav-item {
+    margin-top: 0px;
+  }
+  .main {
+    min-height: 90vh;
+    height: 100%;
+  }
+  .main .main-container-text {
+    height: 90vh;
+    padding-top: 20%;
+    text-align: start;
+  }
+  .main .main-title {
+    font-size: 3.5rem;
+  }
+  .main .main-p {
+    font-size: 1.5rem;
+  }
+  .footer {
+    min-height: 10vh;
+  }
+  .footer .footer-item {
+    text-align: start;
+  }
+  .footer .footer-item .footer-title {
+    font-size: 1.3rem;
+    color: #2F4F4F;
+  }
+  .footer .footer-item a {
+    font-size: 1rem;
+  }
+}/*# sourceMappingURL=style.css.map */

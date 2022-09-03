@@ -1,0 +1,269 @@
+$first-color:#DAA520;
+$second-color:#FAEBD7;
+$third-color:#2F4F4F;
+
+// ----------------------font---------------------
+$font-family:Krungthep;
+$lg-title:3.5rem;
+$md-title:5rem;
+$sm-title:2rem;
+
+$lg-h:2.5rem;
+$md-h:3.5rem;
+$sm-h:1.6rem;
+
+$lg-text:1.5rem;
+$md-text:2rem;
+$sm-text:1.2rem;
+// ----------------------font---------------------
+
+$navbar-home-title-fontSize:2.25rem;
+$navbar-item-fontSize:1.75rem;
+
+$main-lg-hight:90vh;
+$main-md-hight:50vh;
+$main-sm-hight:35vh;
+
+
+$footer-lg-hight:10vh;
+$footer-md-hight:13vh;
+$footer-sm-hight:30vh;
+
+
+.photolocation{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.myphoto{
+    border-radius: 50%;
+}
+
+.navbar{
+    background: $first-color; 
+    font-family: $font-family;
+    & .navbar-brand{
+        color: $second-color;
+        font-size: $navbar-home-title-fontSize;
+    }
+    & .navbar-collapse{
+        & .nav-item{
+            background: $second-color;
+            margin-left: 20px;
+            border-radius: 5px;
+            border: 2px $third-color solid;
+            & .nav-link{
+                text-align: center;
+                color: $third-color;
+                font-size: $navbar-item-fontSize;
+            }
+        }
+        & .nav-item:hover{
+            background: $third-color;
+            border: 2px $second-color solid;
+            & .nav-link{
+                color:$second-color;
+            }
+        }
+    }
+}
+
+
+
+.main{
+    background:$third-color; 
+    color:$second-color;
+    font-family: $font-family;
+    
+}
+
+.about{
+    background:$third-color; 
+    color:$second-color;
+    font-family: $font-family;
+    .myphoto{
+
+    }
+    .skill{
+        p{
+            text-align: center;
+        }
+    }
+}
+
+.footer{
+    background: $first-color;
+    font-family: $font-family;
+    color:$second-color;
+    .footer-item{
+        padding: 20px;
+    }
+}
+
+
+
+
+
+
+@media(min-width:0px) {
+
+    .public-title{
+        font-size:$sm-title;
+        text-align: center;
+    }
+    .public-h{
+        font-size: $sm-h;
+        text-align: start;
+    }
+    .public-p{
+        font-size: $sm-text;
+        text-align: start;
+    }
+    .myphoto{
+        margin-top: 40px;
+        height: 250px;
+    }//調整照片大小
+
+    .nav-item{
+        margin-top: 20px;
+    }//nav選單出現時其他選項的間距離
+    .main{
+        min-height: $main-sm-hight;
+        height: 100%;
+        .main-container-text{
+            height: $main-sm-hight;//控制最大高度
+            padding-top: 3%;
+            text-align: center;
+        }
+        .main-title{
+            font-size:$sm-title;
+        }
+        .main-p{
+            font-size: $sm-text;
+        }
+    }
+
+
+    .footer{
+       min-height:$footer-sm-hight;
+       .footer-item{    
+            text-align: start;
+            .footer-title{
+                font-size: 1.3rem;
+                color:$third-color;
+            }
+            a{
+               font-size: 1rem;
+            }
+        }
+    }
+    
+}
+
+@media (min-width:768px) {
+
+    .public-title{
+        font-size:$md-title;
+    }
+    .public-h{
+        font-size: $md-h;
+    }
+    .public-p{
+        font-size: $md-text;
+    }
+    .myphoto{
+        margin-top: 80px;
+        height: 400px;
+    }//調整照片大小
+
+    .nav-item{
+        margin-top: 40px;
+    }//nav選單沒出現時其他選項的margin不動
+
+    .main{
+        min-height: $main-md-hight;
+        height: 100%;
+        .main-container-text{
+            height: $main-md-hight;//控制最大高度
+            padding-top: 5%;
+            text-align: center;
+        }
+        .main-title{
+            font-size:$md-title;
+        }
+        .main-p{
+            font-size: $md-text;
+        }
+    }
+
+
+    .footer{
+       min-height:$footer-md-hight;
+       .footer-item{    
+             text-align: start;
+             .footer-title{
+                 font-size: 1.7rem;
+                 color:$third-color;
+             }
+             a{
+                font-size: 1.5rem;
+             }
+         }
+     }
+}
+
+@media (min-width:996px) {
+
+    .public-title{
+        font-size:$lg-title;
+    }
+    .public-h{
+        font-size: $lg-h;
+    }
+    .public-p{
+        font-size: $lg-text;
+    }
+    .myphoto{
+        margin-top: 0px;
+        height: 50vh;
+    }//調整照片大小
+
+
+    .nav-item{
+        margin-top: 0px;
+    }//nav選單沒出現時其他選項的margin不動
+
+    .main{
+        min-height: $main-lg-hight;
+        height: 100%;
+        .main-container-text{
+            height: $main-lg-hight;//控制最大高度
+            padding-top: 20%;
+            text-align: start;
+        }
+        .main-title{
+            font-size:$lg-title;
+        }
+        .main-p{
+            font-size: $lg-text;
+        }
+    }
+
+
+    .footer{
+        min-height:$footer-lg-hight;
+        .footer-item{    
+            text-align: start;
+            .footer-title{
+                font-size: 1.3rem;
+                color:$third-color;
+            }
+            a{
+                font-size: 1rem;
+            }
+        }
+    }
+}
+
+
+
