@@ -1,8 +1,11 @@
+
+// -----------------調整顏色---------------------
 $first-color:#DAA520;
 $second-color:#FAEBD7;
 $third-color:#2F4F4F;
+// ---The END-------調整顏色---------------------
 
-// ----------------------font---------------------
+// -------------------三種螢幕下的字體大小font---------------------
 $font-family:Krungthep;
 $lg-title:3.5rem;
 $md-title:5rem;
@@ -15,11 +18,15 @@ $sm-h:1.6rem;
 $lg-text:1.5rem;
 $md-text:2rem;
 $sm-text:1.2rem;
-// ----------------------font---------------------
+// ---The END---------三種螢幕下的字體大小font---------------------
 
+
+// -------------------導覽列字體大小---------------------
 $navbar-home-title-fontSize:2.25rem;
 $navbar-item-fontSize:1.75rem;
+// ---The END---------導覽列字體大小---------------------
 
+// -------------------首頁main螢幕填滿---------------------
 $main-lg-hight:90vh;
 $main-md-hight:50vh;
 $main-sm-hight:35vh;
@@ -28,16 +35,20 @@ $main-sm-hight:35vh;
 $footer-lg-hight:10vh;
 $footer-md-hight:13vh;
 $footer-sm-hight:30vh;
+// ---The END--------------首頁main螢幕填滿---------------------
+
 
 
 .photolocation{
     display: flex;
     justify-content: center;
     align-items: center;
-}
+}//調整myphoto垂直水平置中
 .myphoto{
     border-radius: 50%;
-}
+}//將圖片設定圓型
+
+
 
 .navbar{
     background: $first-color; 
@@ -66,7 +77,31 @@ $footer-sm-hight:30vh;
             }
         }
     }
-}
+}//navbar區塊
+
+
+
+.contact{
+    background:$third-color; 
+    color:$second-color;
+    font-family: $font-family;
+    height: 100vh;//填滿螢幕高度
+}//contact 內容區
+
+.contact-btn{
+    background: $second-color;
+    border: 3px $first-color solid;
+    border-radius: 5%;
+    padding: 15px;
+    font-size: 2.5rem;
+    color: $third-color;
+    text-decoration:none;
+    &:hover{
+        background: $third-color;
+        color: #FAEBD7;
+    }
+}//contact 按鈕
+
 
 
 
@@ -74,22 +109,25 @@ $footer-sm-hight:30vh;
     background:$third-color; 
     color:$second-color;
     font-family: $font-family;
-    
-}
+}//首頁 內容區
 
 .about{
     background:$third-color; 
     color:$second-color;
     font-family: $font-family;
-    .myphoto{
-
-    }
     .skill{
         p{
             text-align: center;
         }
     }
-}
+}//About 內容區
+
+.project{
+    background:$third-color; 
+    color:$second-color;
+    font-family: $font-family;
+    height: 100vh;//填滿螢幕高度 (可以取消)
+}//project 內容區
 
 .footer{
     background: $first-color;
@@ -98,7 +136,7 @@ $footer-sm-hight:30vh;
     .footer-item{
         padding: 20px;
     }
-}
+}//公用的footer
 
 
 
@@ -110,23 +148,25 @@ $footer-sm-hight:30vh;
     .public-title{
         font-size:$sm-title;
         text-align: center;
-    }
+    }//公用的標題字大小
     .public-h{
         font-size: $sm-h;
         text-align: start;
-    }
+    }//公用的次標題字大小
     .public-p{
         font-size: $sm-text;
         text-align: start;
-    }
+    }//公用的文字大小
+
     .myphoto{
         margin-top: 40px;
         height: 250px;
-    }//調整照片大小
+    }//sm調整照片大小
 
     .nav-item{
         margin-top: 20px;
     }//nav選單出現時其他選項的間距離
+    
     .main{
         min-height: $main-sm-hight;
         height: 100%;

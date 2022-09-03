@@ -35,6 +35,27 @@
   color: #FAEBD7;
 }
 
+.contact {
+  background: #2F4F4F;
+  color: #FAEBD7;
+  font-family: Krungthep;
+  height: 100vh;
+}
+
+.contact-btn {
+  background: #FAEBD7;
+  border: 3px #DAA520 solid;
+  border-radius: 5%;
+  padding: 15px;
+  font-size: 2.5rem;
+  color: #2F4F4F;
+  text-decoration: none;
+}
+.contact-btn:hover {
+  background: #2F4F4F;
+  color: #FAEBD7;
+}
+
 .main {
   background: #2F4F4F;
   color: #FAEBD7;
@@ -48,6 +69,13 @@
 }
 .about .skill p {
   text-align: center;
+}
+
+.project {
+  background: #2F4F4F;
+  color: #FAEBD7;
+  font-family: Krungthep;
+  height: 100vh;
 }
 
 .footer {
